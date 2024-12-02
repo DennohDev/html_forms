@@ -9,121 +9,79 @@
 <body>
     <div class="container">
         <h1>Student Registration</h1>
-        <!-- 
-        Task 1: Create a form with the following attributes:
-        - id: "studentForm"
-        - action: "/submit"
-        - method: "post"
-        -->
+        <form id="studentForm" action="/submit" method="post">
+            <!-- Text input -->
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
 
-        <!-- 
-        Task 2: Create a text input for full name
-        Requirements:
-        - Use div with class "form-group"
-        - Add label with for="fullName"
-        - Input should have:
-          * id="fullName"
-          * name="fullName"
-          * required attribute
-        -->
+            <!-- Email input -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-        <!-- 
-        Task 3: Create an email input
-        Requirements:
-        - Use div with class "form-group"
-        - Add label with for="email"
-        - Input should have:
-          * id="email"
-          * name="email"
-          * required attribute
-        -->
+            <!-- Password input -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
 
-        <!-- 
-        Task 4: Create a password input
-        Requirements:
-        - Use div with class "form-group"
-        - Add label with for="password"
-        - Input should have:
-          * id="password"
-          * name="password"
-          * required attribute
-        -->
+            <!-- Radio buttons -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male">
+                        Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female">
+                        Female
+                    </label>
+                </div>
+            </div>
 
-        <!-- 
-        Task 5: Create radio buttons for gender
-        Requirements:
-        - Use div with class "form-group"
-        - Add div with class "radio-group"
-        - Create two radio inputs:
-          1. Male option:
-             * id="male"
-             * name="gender"
-             * value="male"
-          2. Female option:
-             * id="female"
-             * name="gender"
-             * value="female"
-        - Each option needs a label with matching 'for' attribute
-        -->
+            <!-- Checkbox -->
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Subscribe to newsletter
+                    </label>
+                </div>
+            </div>
 
-        <!-- 
-        Task 6: Create a checkbox for newsletter
-        Requirements:
-        - Use div with class "form-group"
-        - Add div with class "checkbox-group"
-        - Input should have:
-          * id="subscribe"
-          * name="subscribe"
-        - Add label with for="subscribe"
-        -->
+            <!-- Select dropdown -->
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">Choose a course</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
 
-        <!-- 
-        Task 7: Create a select dropdown for courses
-        Requirements:
-        - Use div with class "form-group"
-        - Add label with for="course"
-        - Select should have:
-          * id="course"
-          * name="course"
-          * required attribute
-        - Add options for:
-          * Empty option with "Choose a course"
-          * "html"
-          * "css"
-          * "javascript"
-        -->
+            <!-- Textarea -->
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
 
-        <!-- 
-        Task 8: Create a textarea for comments
-        Requirements:
-        - Use div with class "form-group"
-        - Add label with for="comments"
-        - Textarea should have:
-          * id="comments"
-          * name="comments"
-          * rows="4"
-        -->
+            <!-- File input -->
+            <div class="form-group">
+                <label for="profilePic">Profile Picture:</label>
+                <input type="file" id="profilePic" name="profilePic" accept="image/*">
+            </div>
 
-        <!-- 
-        Task 9: Create a file input for profile picture
-        Requirements:
-        - Use div with class "form-group"
-        - Add label with for="profilePic"
-        - Input should have:
-          * id="profilePic"
-          * name="profilePic"
-          * accept="image/*"
-        -->
-
-        <!-- 
-        Task 10: Create submit and reset buttons
-        Requirements:
-        - Use div with class "button-group"
-        - Add two buttons:
-          1. Submit button with type="submit"
-          2. Reset button with type="reset"
-        -->
-
+            <!-- Submit and Reset buttons -->
+            <div class="button-group">
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
